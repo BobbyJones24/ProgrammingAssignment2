@@ -1,0 +1,13 @@
+makeCacheMatrix <- function(x = matrix()) {
+        if(!is.matrix(x)) {
+                stop("Please enter a matrix as the function argument")
+        } else {
+                y <- solve(x)
+                cachedmatrix <<- y
+        }
+        if(!is.matrix(cachedmatrix)) {
+                stop("Matix is not invertible")
+        } else  {
+                print("matrix inverted and stored in cachedmatrix")
+        }        
+}
